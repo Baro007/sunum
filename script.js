@@ -43,11 +43,17 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'End') { e.preventDefault(); showSlide(slides.length - 1); }
 });
 
-let touchX = 0;
-document.addEventListener('touchstart', (e) => { touchX = e.changedTouches[0].screenX; });
+let touchX = 0, touchY = 0;
+document.addEventListener('touchstart', (e) => {
+  touchX = e.changedTouches[0].screenX;
+  touchY = e.changedTouches[0].screenY;
+});
 document.addEventListener('touchend', (e) => {
-  const d = touchX - e.changedTouches[0].screenX;
-  if (Math.abs(d) > 50) d > 0 ? nextSlide() : prevSlide();
+  const dx = touchX - e.changedTouches[0].screenX;
+  const dy = touchY - e.changedTouches[0].screenY;
+  if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.5) {
+    dx > 0 ? nextSlide() : prevSlide();
+  }
 });
 
 function animateCounters() {
