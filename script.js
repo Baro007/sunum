@@ -8,6 +8,7 @@ function showSlide(index) {
   slides[current].classList.add('active');
   updateProgress();
   animateCounters();
+  updateNotes();
 }
 
 function nextSlide() { showSlide(current + 1); }
@@ -19,9 +20,27 @@ function updateProgress() {
   document.getElementById('slide-counter').textContent = (current + 1) + ' / ' + slides.length;
 }
 
+function updateNotes() {
+  const body = document.getElementById('notes-body');
+  if (!body) return;
+  const notes = slides[current].dataset.notes || '';
+  body.textContent = notes || 'Bu slayt için not eklenmemiş.';
+}
+
+function toggleNotes() {
+  const panel = document.getElementById('notes-panel');
+  if (!panel) return;
+  panel.classList.toggle('open');
+  panel.setAttribute('aria-hidden', panel.classList.contains('open') ? 'false' : 'true');
+}
+
 document.addEventListener('keydown', (e) => {
+  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
   if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); nextSlide(); }
   if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); prevSlide(); }
+  if (e.key === 'n' || e.key === 'N') { e.preventDefault(); toggleNotes(); }
+  if (e.key === 'Home') { e.preventDefault(); showSlide(0); }
+  if (e.key === 'End') { e.preventDefault(); showSlide(slides.length - 1); }
 });
 
 let touchX = 0;
@@ -55,3 +74,5 @@ function createParticles(id) {
 createParticles('particles');
 createParticles('particles2');
 updateProgress();
+updateNotes();
+animateCounters();

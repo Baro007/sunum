@@ -143,12 +143,119 @@ li{margin-bottom:0.8rem;color:#cbd5e1}
 .cascade-item p{font-size:0.85rem;color:#94a3b8;line-height:1.4}
 .cascade-arrow{font-size:2rem;color:#ef4444;font-weight:700;display:flex;align-items:center;animation:fadeUp .4s ease both;animation-delay:calc(var(--i)*.15s)}
 
+/* ============================================ */
+/* 2. AÇILIŞ VAKASI — HATICE TEYZE              */
+/* ============================================ */
+.case-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;max-width:1100px;margin:0 auto 1.2rem;align-items:stretch}
+.case-card{background:rgba(30,41,59,.45);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:1.2rem 1.3rem;display:flex;flex-direction:column}
+.case-card.primary{border-top:3px solid #38bdf8}
+.case-card.warn{border-top:3px solid #facc15}
+.case-card.meds{border-top:3px solid #fb923c}
+.case-card h3{font-size:1.05rem;margin-bottom:0.6rem;color:#f8fafc}
+.case-icon{font-size:2.2rem;margin-bottom:0.4rem;text-align:center}
+.case-list{list-style:none;padding:0;margin:0}
+.case-list li{padding:6px 0;border-bottom:1px dashed rgba(255,255,255,.06);color:#cbd5e1;font-size:0.88rem;line-height:1.4}
+.case-list li:last-child{border-bottom:none}
+.med-pills{display:flex;flex-wrap:wrap;gap:6px;margin-top:0.4rem}
+.med-pill{font-size:0.78rem;padding:5px 10px;border-radius:20px;background:rgba(56,189,248,.1);color:#bae6fd;border:1px solid rgba(56,189,248,.25);font-weight:500}
+.med-pill.warn{background:rgba(239,68,68,.12);color:#fca5a5;border-color:rgba(239,68,68,.3)}
+
+/* ============================================ */
+/* 3. KOMORBIDITE / DISABILITE / KIRILGANLIK ÜÇGENİ */
+/* ============================================ */
+.triangle-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1000px;margin:0 auto 0.8rem}
+.tri-card{background:rgba(30,41,59,.4);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1rem 1.1rem;text-align:center}
+.tri-card .tri-h{font-size:1rem;font-weight:700;color:#f1f5f9;margin-bottom:0.4rem}
+.tri-card .tri-b{font-size:0.85rem;color:#cbd5e1;margin-bottom:0.4rem;line-height:1.4}
+.tri-card .tri-ex{font-size:0.78rem;color:#94a3b8;font-style:italic}
+.tri-card.accent-card{border:1px solid rgba(56,189,248,.4);background:rgba(56,189,248,.08);box-shadow:0 0 24px rgba(56,189,248,.08)}
+.tri-card.accent-card .tri-h{color:#7dd3fc}
+
+/* ============================================ */
+/* 6. FİZİKSEL PERFORMANS TESTLERİ PANELİ        */
+/* ============================================ */
+.perf-panel{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:1100px;margin:0 auto 1rem}
+.perf-card{background:rgba(30,41,59,.45);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1rem 0.8rem;text-align:center;border-top:3px solid #38bdf8}
+.perf-icon{font-size:1.8rem;margin-bottom:0.3rem}
+.perf-name{font-size:0.85rem;color:#cbd5e1;font-weight:600;margin-bottom:0.4rem;line-height:1.3}
+.perf-cut{font-size:1rem;color:#facc15;margin-bottom:0.3rem}
+.perf-note{font-size:0.72rem;color:#94a3b8;font-style:italic}
+
+/* ============================================ */
+/* 7. AYIRICI TANI GRID                          */
+/* ============================================ */
+.dx-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1100px;margin:0 auto 1rem}
+.dx-card{background:rgba(30,41,59,.45);border:1px solid rgba(255,255,255,.06);border-radius:12px;padding:1rem 1.1rem;border-left:3px solid #f87171}
+.dx-h{font-size:1rem;color:#f8fafc;font-weight:700;margin-bottom:0.5rem}
+.dx-b{font-size:0.85rem;color:#cbd5e1;line-height:1.4;margin-bottom:0.5rem;min-height:2.4rem}
+.dx-test{font-size:0.78rem;color:#7dd3fc;background:rgba(56,189,248,.1);padding:4px 10px;border-radius:6px;display:inline-block;font-weight:600}
+
+/* ============================================ */
+/* 10. TEDAVİ 3-KOLON GRID                       */
+/* ============================================ */
+.treatment-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;max-width:1150px;margin:0 auto 1rem;align-items:stretch}
+.tx-card{background:rgba(30,41,59,.45);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:1.1rem 1.2rem;display:flex;flex-direction:column}
+.tx-card.add{border-top:3px solid #10b981}
+.tx-card.remove{border-top:3px solid #f87171}
+.tx-card.pearl{border-top:3px solid #facc15}
+.tx-h{font-size:1.05rem;font-weight:700;color:#f8fafc;margin-bottom:0.3rem}
+.tx-sub{font-size:0.8rem;color:#94a3b8;margin-bottom:0.7rem;font-style:italic}
+.tx-list{list-style:none;padding:0;margin:0;flex:1}
+.tx-list li{padding:7px 0;border-bottom:1px dashed rgba(255,255,255,.05);font-size:0.85rem;color:#cbd5e1;line-height:1.45}
+.tx-list li:last-child{border-bottom:none}
+.tx-warn{display:inline-block;font-size:0.72rem;color:#fca5a5;background:rgba(239,68,68,.12);padding:2px 8px;border-radius:6px;margin-left:4px;font-weight:600}
+.tx-foot{font-size:0.78rem;color:#94a3b8;margin-top:0.6rem;padding-top:0.5rem;border-top:1px solid rgba(255,255,255,.06)}
+.cascade-mini{display:flex;flex-wrap:wrap;gap:4px;align-items:center;margin-bottom:0.5rem;font-size:0.75rem}
+.cm-step{padding:4px 8px;border-radius:6px;background:rgba(59,130,246,.15);color:#bfdbfe;font-weight:600}
+.cm-step.se{background:rgba(239,68,68,.15);color:#fca5a5}
+.cm-arrow{color:#475569;font-weight:700}
+
+/* ============================================ */
+/* 12. ALGORİTMA + HATICE TEYZE GERİ DÖNÜŞ       */
+/* ============================================ */
+.algo-case-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:1100px;margin:0 auto 1rem;align-items:start}
+.case-apply{background:rgba(56,189,248,.06);border:1px solid rgba(56,189,248,.2);border-radius:14px;padding:1.1rem 1.2rem}
+.ca-header{font-size:1rem;font-weight:700;color:#7dd3fc;margin-bottom:0.8rem;text-align:center;padding-bottom:0.6rem;border-bottom:1px solid rgba(56,189,248,.2)}
+.ca-step{display:flex;align-items:flex-start;gap:12px;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.05);font-size:0.85rem;color:#cbd5e1;line-height:1.4}
+.ca-step:last-child{border-bottom:none}
+.ca-n{flex-shrink:0;width:26px;height:26px;border-radius:50%;background:#38bdf8;color:#0a0e1a;font-weight:800;font-size:0.85rem;display:flex;align-items:center;justify-content:center}
+.ca-step strong{color:#f8fafc}
+
+.takehome-card{display:flex;align-items:center;gap:18px;max-width:1100px;margin:0.5rem auto 0;padding:18px 22px;background:linear-gradient(135deg,rgba(34,197,94,.08),rgba(56,189,248,.08));border:1px solid rgba(34,197,94,.25);border-radius:14px}
+.th-icon{font-size:2rem;flex-shrink:0}
+.th-body{font-size:0.95rem;line-height:1.5;color:#e2e8f0}
+.th-body strong{color:#86efac}
+
+/* ============================================ */
+/* 13. KAPANIŞ — KAYNAKLAR + ALINTI              */
+/* ============================================ */
+.closing-refs{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 12px;font-size:0.78rem;color:#64748b;font-style:italic;margin-bottom:1.5rem;padding:0.7rem 0;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);max-width:780px;margin-left:auto;margin-right:auto}
+.closing-quote{font-size:1.15rem;line-height:1.6;font-style:italic;color:#cbd5e1;max-width:800px;margin:0 auto;padding-top:0.5rem}
+.quote-author{font-size:1rem;font-weight:600;font-style:normal;color:#f8fafc;display:block;margin-top:1rem}
+
+/* ============================================ */
+/* KONUŞMACI NOTLARI PANELİ                      */
+/* ============================================ */
+#btn-notes{font-size:1.05rem!important;font-weight:700}
+#notes-panel{position:fixed;bottom:90px;right:24px;width:min(420px,90vw);max-height:50vh;background:rgba(15,23,42,.97);backdrop-filter:blur(12px);border:1px solid rgba(56,189,248,.25);border-radius:14px;padding:0;z-index:99;display:none;box-shadow:0 20px 60px rgba(0,0,0,.5);overflow:hidden;flex-direction:column}
+#notes-panel.open{display:flex;animation:notesIn .25s ease-out}
+@keyframes notesIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.notes-header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:rgba(56,189,248,.1);border-bottom:1px solid rgba(56,189,248,.2);font-size:0.85rem;font-weight:700;color:#7dd3fc;letter-spacing:0.5px;text-transform:uppercase}
+.notes-close{background:none;border:none;color:#94a3b8;font-size:1.4rem;cursor:pointer;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;transition:all .2s}
+.notes-close:hover{background:rgba(239,68,68,.15);color:#f87171}
+#notes-body{padding:14px 18px;font-size:0.9rem;line-height:1.55;color:#cbd5e1;overflow-y:auto;flex:1}
+.notes-hint{padding:8px 16px;background:rgba(0,0,0,.25);font-size:0.7rem;color:#64748b;text-align:center;letter-spacing:0.4px}
+
+/* ============================================ */
+/* RESPONSIVE                                    */
+/* ============================================ */
 @media(max-width:768px){
-  .two-col, .dep-container, .future-grid, .sq-flow, .cfs-groups{grid-template-columns:1fr; flex-direction:column}
+  .two-col, .dep-container, .future-grid, .sq-flow, .cfs-groups, .case-grid, .triangle-grid, .perf-panel, .dx-grid, .treatment-grid, .algo-case-grid{grid-template-columns:1fr; flex-direction:column}
   .infographic-flow, .cascade-flow{flex-direction:column;align-items:center}
   .info-arrow, .cascade-arrow{transform:rotate(90deg)}
   .cfs-group{max-width:100%}
   html{font-size:16px}
+  #notes-panel{right:12px;left:12px;width:auto;bottom:90px}
 }
 
 @media print {
@@ -174,9 +281,15 @@ li{margin-bottom:0.8rem;color:#cbd5e1}
   * { color: #000 !important; text-shadow: none !important; box-shadow: none !important; }
   .accent { -webkit-text-fill-color: #000 !important; }
   .cfs-num { background: #eee !important; border: 1px solid #000; -webkit-print-color-adjust: exact; color-adjust: exact; }
-  .frail-item, .stat-card, .col-card, .cfs-group, .cascade-item, .dep-list, .fut-card, .sq-box, .info-box { background: #fff !important; border: 2px solid #333 !important; -webkit-print-color-adjust: exact; color-adjust: exact; }
+  .frail-item, .stat-card, .col-card, .cfs-group, .cascade-item, .dep-list, .fut-card, .sq-box, .info-box,
+  .case-card, .tri-card, .perf-card, .dx-card, .tx-card, .case-apply, .takehome-card { background: #fff !important; border: 2px solid #333 !important; -webkit-print-color-adjust: exact; color-adjust: exact; }
   .hero-overlay, .hero-particles { display: none !important; }
+  #notes-panel, #btn-notes { display: none !important; }
   /* Zorunlu arka plan renklerini PDF'e geçirmek için */
   .sq-box.yes { background: #e8f5e9 !important; border-color: #4caf50 !important; }
   .sq-box.no { background: #ffebee !important; border-color: #f44336 !important; }
+  .med-pill { border: 1px solid #666 !important; background: #f5f5f5 !important; }
+  .tx-warn, .dx-test { border: 1px solid #999 !important; background: #f0f0f0 !important; }
+  .cm-step { border: 1px solid #666 !important; background: #f5f5f5 !important; padding: 4px 8px !important; }
+  .cm-arrow { color: #333 !important; }
 }
