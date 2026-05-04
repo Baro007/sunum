@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yaşlılarda Kırılganlık — Dr. Sadık Barış Adıgüzel</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress-bar"></div>
+<div id="slide-counter"></div>
+<nav id="nav">
+  <button onclick="prevSlide()" id="btn-prev">‹</button>
+  <button onclick="nextSlide()" id="btn-next">›</button>
+</nav>
+
+<!-- 1: KAPAK -->
+<section class="slide active" data-bg="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-event">7 Mayıs 2026</p>
+    <h1 class="hero-title">Yaşlılarda<br><span class="accent">Kırılganlık</span></h1>
+    <p class="hero-sub">Birinci Basamakta Erken Tespit ve Müdahale</p>
+    <div class="author-block">
+      <div class="author-line"></div>
+      <p>Dr. Sadık Barış Adıgüzel</p>
+      <p class="author-role" style="margin-bottom:0.5rem;">Antalya Eğitim ve Araştırma Hastanesi Aile Hekimliği A.B.D.</p>
+      <p style="font-size:0.95rem; color:#94a3b8; font-weight:400; margin-top:0.2rem;">Danışman: Uzm. Dr. Nadire Karsavuran</p>
+    </div>
+  </div>
+  <div class="hero-particles" id="particles"></div>
+</section>
+
+<!-- 2: TANIM -->
+<section class="slide"><div class="slide-inner">
+  <h2>Kırılganlık <span class="accent">Nedir?</span></h2>
+  <div class="two-col" style="margin-bottom:2rem; align-items:stretch;">
+    <div class="col-card" style="border-top:3px solid #f87171">
+      <h3 style="font-size:1.4rem;">❌ Sadece Yaşlılık Değildir</h3>
+      <p style="color:#cbd5e1; margin-top:1rem;">Biyolojik yaş kronolojik yaştan bağımsızdır. Kırılganlık, yaşlanmanın veya "çok hastalığı olmanın" (komorbidite) kaçınılmaz bir sonu değildir.</p>
+    </div>
+    <div class="col-card" style="border-top:3px solid #38bdf8">
+      <h3 style="font-size:1.4rem;">📉 Rezerv Kaybıdır</h3>
+      <p style="color:#cbd5e1; margin-top:1rem;">Stresörlere (enfeksiyon, düşme, cerrahi) karşı homeostatik rezervin ve iyileşme kapasitesinin tükenmesi sendromudur.</p>
+    </div>
+  </div>
+  <div class="callout tip" style="max-width:1000px;"><span class="ci">💡</span><p><strong>Komorbidite vs Kırılganlık:</strong> Kalp yetmezliğinizin olması komorbiditedir. Ancak o kalp yetmezliği hastasının hafif bir idrar yolu enfeksiyonunda deliryuma girip yatağa bağımlı hale gelmesi <strong>Kırılganlıktır.</strong></p></div>
+</div></section>
+
+<!-- 3: ÇARPICI GERÇEK -->
+<section class="slide"><div class="slide-inner">
+  <h2>Neden <span class="accent">Kırılganlık?</span></h2>
+  <div class="stat-row">
+    <div class="stat-card" style="--i:0"><div class="stat-num" data-count="10">0</div><div class="stat-unit">%</div><p>65+ Yaş Prevalansı<br><span style="font-size:0.85rem;color:#facc15">90+ yaşta > %50</span></p></div>
+    <div class="stat-card" style="--i:1"><div class="stat-num" data-count="5">0</div><div class="stat-unit">Kat</div><p>Mortalite Riski Artışı</p></div>
+    <div class="stat-card" style="--i:2"><div class="stat-num" data-count="37">0</div><div class="stat-unit">%</div><p>Gereksiz İlaç Kesildiğinde<br>Mortalite Düşüşü</p></div>
+  </div>
+  <div class="callout tip"><span class="ci">⚡</span><p><strong>Paradigma Değişimi:</strong> Kırılganlık yaşlanmanın kaçınılmaz bir sonu değildir. Erken evrede (pre-frail) <strong>tamamen geri çevrilebilir!</strong></p></div>
+  <div class="reference">Ref: Xue QL. The Frailty Syndrome (2011) / Garfinkel D. Deprescribing in Frail Older Adults (2015)</div>
+</div></section>
+
+<!-- 3: MEKANİZMA (İnflammaging) -->
+<section class="slide"><div class="slide-inner">
+  <h2>Buzdağının Altı: <span class="accent">Inflammaging</span></h2>
+  <div class="infographic-flow">
+    <div class="info-box" style="--i:0"><h3>🔥 İnflammaging</h3><p>Kronik pro-enflamatuar sitokin<br>(IL-6, CRP, TNF-α) artışı</p></div>
+    <div class="info-arrow">→</div>
+    <div class="info-box" style="--i:1"><h3>🧟 Hücresel Senesens</h3><p>Zombi hücre birikimi ve<br>toksik SASP faktörleri</p></div>
+    <div class="info-arrow">→</div>
+    <div class="info-box" style="--i:2"><h3>🔋 Mitokondri Hasarı</h3><p>Enerji (ATP) krizine ve<br>atrofiye yol açan ROS</p></div>
+    <div class="info-arrow">→</div>
+    <div class="info-box alert" style="--i:3"><h3>⚠️ Kırılganlık</h3><p>Düşme, Hastane Yatışı,<br>Mortalite Artışı</p></div>
+  </div>
+  <div class="callout"><span class="ci">🧠</span><p><strong>Kas-Beyin Aksı:</strong> Düşük kas gücü (kavrama), kognitif yıkımın en güçlü öngördürücüsüdür.</p></div>
+  <div class="reference">Ref: Franceschi C. Inflammaging as a Major Characteristic of Old People (2000)</div>
+</div></section>
+
+<!-- 4: SARKOPENİ -->
+<section class="slide"><div class="slide-inner">
+  <h2>Sarkopeni ve <span class="accent">Kırılganlık Kesişimi</span></h2>
+  <div class="two-col" style="margin-bottom:1.5rem; align-items:stretch;">
+    <div class="col-card" style="border-top:3px solid #facc15">
+      <h3 style="font-size:1.2rem;">Kesişim Kümesi</h3>
+      <p style="color:#cbd5e1; margin-top:0.5rem; font-size:0.95rem;">Sarkopeni kırılganlığın en majör bileşenidir. Kırılgan bireylerin çoğu sarkopeniktir, ancak <strong>her sarkopenik birey kırılgan olmayabilir.</strong> Erken evrede SARC-F testi hayat kurtarır.</p>
+    </div>
+    <div class="col-card" style="border-top:3px solid #38bdf8">
+      <h3 style="font-size:1.2rem;">🧠 Kas-Beyin Ekseni (AWGS 2025)</h3>
+      <p style="color:#cbd5e1; margin-top:0.5rem; font-size:0.95rem;">Sarkopeni sadece fiziksel bir engel değil, kognitif gerilemenin de habercisidir. Düşük kas gücü (kavrama), <strong>kognitif yıkımın en güçlü öngördürücüsüdür.</strong></p>
+    </div>
+  </div>
+  <h3 style="text-align:center; margin-bottom:1rem; color:#f8fafc; font-weight:600;">EWGSOP2 Güncel Eşik Değerleri (Cut-off)</h3>
+  <div class="stat-row" style="margin-bottom:1rem;">
+    <div class="stat-card" style="--i:0"><div class="stat-num" data-count="27">0</div><div class="stat-unit">kg</div><p>Erkek Kavrama<br>(Alt Sınır)</p></div>
+    <div class="stat-card" style="--i:1"><div class="stat-num" data-count="16">0</div><div class="stat-unit">kg</div><p>Kadın Kavrama<br>(Alt Sınır)</p></div>
+    <div class="stat-card" style="--i:2"><div class="stat-num" data-count="15">0</div><div class="stat-unit">sn</div><p>Sandalyeden Kalkma<br>(>15 sn Şiddetli)</p></div>
+  </div>
+  <div class="reference">Ref: EWGSOP2 Sarcopenia Guidelines / ICFSR / AWGS 2025 Consensus</div>
+</div></section>
+
+<!-- 5: TARAMA (FRAIL) -->
+<section class="slide"><div class="slide-inner">
+  <h2>Poliklinikte 1 Dakikalık Tarama: <span class="accent">FRAIL</span></h2>
+  <p style="text-align:center; color:#94a3b8; margin-bottom:1.5rem;">65 yaş üstü her hastaya yılda bir kez sorulmalı. <br><strong style="color:#f87171">Tek Madde Alternatifi:</strong> 4 metrelik yürüme hızının &lt; 0.8 m/s olması %99 sensitivite ile kırılganlığı işaret eder.</p>
+  <div class="frail-grid">
+    <div class="frail-item" style="--i:0"><div class="fl">F</div><div><strong>Fatigue (Yorgunluk):</strong> Çoğu zaman yorgun musunuz?</div></div>
+    <div class="frail-item" style="--i:1"><div class="fl">R</div><div><strong>Resistance (Direnç):</strong> Yardımsız 10 basamak çıkabilir misiniz?</div></div>
+    <div class="frail-item" style="--i:2"><div class="fl">A</div><div><strong>Ambulation (Yürüme):</strong> Yardımsız 100 metre yürüyebilir misiniz?</div></div>
+    <div class="frail-item" style="--i:3"><div class="fl">I</div><div><strong>Illness (Hastalık):</strong> 5'ten fazla kronik hastalığınız var mı?</div></div>
+    <div class="frail-item" style="--i:4"><div class="fl">L</div><div><strong>Loss of Weight (Kilo):</strong> Son 6 ayda %5'ten fazla kilo kaybettiniz mi?</div></div>
+  </div>
+  <div class="frail-score">0 = Sağlıklı &nbsp;|&nbsp; 1-2 = Pre-frail (Geri çevrilebilir) &nbsp;|&nbsp; 3-5 = Kırılgan (Yönetim Gerekir)</div>
+  <div class="callout"><span class="ci">⚠️</span><p><strong>Yorgunluk (Fatigue):</strong> Yaşlanmanın doğal bir sonucu değil, <strong>kırılganlığın ilk ve en sık görülen</strong> çekirdek semptomudur. Depresyon veya "yaşlılık" ile karıştırılmamalıdır.</p></div>
+  <div class="callout tip" style="margin-top:0.8rem;"><span class="ci">💻</span><p><strong>Yenilikçi Yaklaşım: e-FI (Elektronik Frailty İndeksi).</strong> Hastayı yormadan, e-nabız/HBYS verilerini (polifarmasi, düşme, lab) kullanarak kırılganlık riskini otomatik hesaplayan <strong>yapay zeka destekli</strong> sistemlerdir.</p></div>
+  <div class="reference">Ref: Morley JE et al. FRAIL scale (2012) / UpToDate: Approach to the adult patient with fatigue</div>
+</div></section>
+
+<!-- 5: SINIFLANDIRMA (CFS) -->
+<section class="slide"><div class="slide-inner">
+  <h2>Görsel Sınıflandırma: <span class="accent">CFS Skalası</span></h2>
+  <p style="text-align:center; color:#94a3b8; margin-bottom:1.5rem;">Hızlı klinik karar vermek için yargıya dayalı görsel ölçek.<br><strong style="color:#cbd5e1">Puanlama:</strong> Bağımsızlık düzeyi ve Günlük Yaşam Aktivitelerine (GYA) göre yapılır.</p>
+  <div class="cfs-groups">
+    <div class="cfs-group">
+      <h3 class="group-title" style="color:#4ade80">1-4: Bağımsız</h3>
+      <p class="group-desc">Günlük işlerini (GYA) yardımsız yapar.</p>
+      <div class="cfs-scale sub">
+        <div class="cfs-item" style="--c:#22c55e"><span class="cfs-num">1</span><span>Çok Fit</span></div>
+        <div class="cfs-item" style="--c:#4ade80"><span class="cfs-num">2</span><span>Fit</span></div>
+        <div class="cfs-item" style="--c:#86efac"><span class="cfs-num">3</span><span>İyi</span></div>
+        <div class="cfs-item" style="--c:#fde047"><span class="cfs-num">4</span><span>Hafif Riskli</span></div>
+      </div>
+    </div>
+    
+    <div class="cfs-group">
+      <h3 class="group-title" style="color:#fb923c">5-6: Kısmi Bağımlı</h3>
+      <p class="group-desc">Alışveriş, banyo vb. işlerde destek gerekir.</p>
+      <div class="cfs-scale sub">
+        <div class="cfs-item" style="--c:#facc15"><span class="cfs-num">5</span><span>Hafif<br>Kırılgan</span></div>
+        <div class="cfs-item" style="--c:#fb923c"><span class="cfs-num">6</span><span>Orta<br>Kırılgan</span></div>
+      </div>
+    </div>
+
+    <div class="cfs-group">
+      <h3 class="group-title" style="color:#ef4444">7-9: Tam Bağımlı</h3>
+      <p class="group-desc">Kişisel bakımda bağımlı veya terminal.</p>
+      <div class="cfs-scale sub">
+        <div class="cfs-item" style="--c:#f87171"><span class="cfs-num">7</span><span>Ağır</span></div>
+        <div class="cfs-item" style="--c:#ef4444"><span class="cfs-num">8</span><span>Çok Ağır</span></div>
+        <div class="cfs-item" style="--c:#991b1b"><span class="cfs-num">9</span><span>Terminal</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="callout tip"><span class="ci">📌</span><p><strong>Klinik İpucu:</strong> CFS 5-6 düzeyindeki hastalar, IADL (alışveriş, para yönetimi) desteğine ihtiyaç duymaya başlayan, birinci basamakta düşme riski en yüksek gruptur.</p></div>
+  <div class="reference">Ref: Rockwood K. A global clinical measure of fitness and frailty in elderly people (2005)</div>
+</div></section>
+
+<!-- 6: MÜDAHALE (Egzersiz ve Protein) -->
+<section class="slide"><div class="slide-inner">
+  <h2>Ne Ekleyelim? <span class="accent">Egzersiz & Protein</span></h2>
+  <div class="two-col">
+    <div class="col-card" style="border-top:3px solid #3b82f6">
+      <h3>🏋️ En Güçlü İlaç: Egzersiz</h3>
+      <p style="font-size:0.9rem; color:#cbd5e1; margin-bottom:1rem;">Kırılganlığı önlemede ve tersine çevirmede kanıt düzeyi en yüksek müdahale.</p>
+      <ul>
+        <li>Haftada 2-3 gün <strong>direnç egzersizi</strong> (kas kütlesi için)</li>
+        <li>Haftada 2 gün <strong>denge/Tai-Chi</strong> (düşmeyi önlemek için)</li>
+        <li>Aerobik yürüyüşler</li>
+      </ul>
+    </div>
+    <div class="col-card" style="border-top:3px solid #10b981">
+      <h3>🥩 Temel Reçete: Protein</h3>
+      <p style="font-size:0.9rem; color:#cbd5e1; margin-bottom:1rem;">Yaşlılarda anabolik direnci kırmak için porsiyon başı doz önemlidir.</p>
+      <ul>
+        <li><strong>Hedef:</strong> 1.2 - 1.5 g/kg/gün protein</li>
+        <li>Kritik Eşik: Her ana öğünde <strong>~30 gram protein</strong></li>
+        <li><strong>Lösin ve HMB Takviyesi:</strong> Sarkopenide kas yıkımını önlemede çok değerlidir.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="reference">Ref: ICFSR 2024 International Clinical Practice Guidelines for Frailty</div>
+</div></section>
+
+<!-- 7: MÜDAHALE (Deprescribing) -->
+<section class="slide"><div class="slide-inner">
+  <h2>Ne Çıkaralım? <span class="accent">Deprescribing</span></h2>
+  <div class="dep-container">
+    <div class="dep-text">
+      <p class="big-text">Polifarmasi, kırılganlığın hem <strong>nedeni</strong> hem de <strong>sonucudur.</strong></p>
+      <ul>
+        <li>Uygunsuz ilaçların kesilmesi, hayat kalitesini artırır ve düşmeleri azaltır.</li>
+        <li><strong>Sıkı Kontrol Riski:</strong> Kırılganlarda SKB'yi &lt;130 mmHg'ye zorlamak veya sıkı HbA1c kontrolü mortaliteyi artırabilir.</li>
+        <li><strong>Terminal Evre:</strong> Beklenen ömrü &lt;12 ay olanlarda statinlerin kesilmesi yaşam kalitesini artırır.</li>
+      </ul>
+      <div class="callout" style="margin:1rem 0; padding:12px 16px;"><span class="ci" style="font-size:1.2rem">🩺</span><p style="font-size:0.85rem"><strong>Böbreklere Dikkat:</strong> Yaşlılarda serum kreatinin <em>normal olsa bile</em> GFR düşük olabilir. Dozlar her zaman kreatinin klerensine göre ayarlanmalıdır.</p></div>
+    </div>
+    <div class="dep-list">
+      <h3>İlk Gözden Geçirilecekler:</h3>
+      <div class="dep-item"><span>Benzodiazepinler / Sedatifler</span> <span class="dep-warn">Düşme, Deliryum</span></div>
+      <div class="dep-item"><span>Antikolinerjikler</span> <span class="dep-warn">Kognitif Yıkım</span></div>
+      <div class="dep-item"><span>PPI (Uzun Süreli)</span> <span class="dep-warn">B12 ve Mg Eksikliği</span></div>
+      <div class="dep-item"><span>SSRI / Tiyazid Diüretikler</span> <span class="dep-warn">Hiponatremi</span></div>
+    </div>
+  </div>
+  <div class="reference">Ref: STOPP/START criteria / UpToDate: Deprescribing</div>
+</div></section>
+
+<!-- 8: REÇETE ŞELALESİ -->
+<section class="slide"><div class="slide-inner">
+  <h2>Gizli Tehlike: <span class="accent">Reçete Şelalesi</span></h2>
+  <p style="text-align:center; color:#94a3b8; margin-bottom:1rem; font-size:1.1rem">"Her yeni semptom, aksi ispatlanana kadar bir ilacın yan etkisidir."</p>
+  <div class="cascade-wrapper">
+    <div class="cascade-flow">
+      <div class="cascade-item med" style="--i:0"><h3>💊 Amlodipin</h3><p>Hipertansiyon tedavisi başlanır</p></div>
+      <div class="cascade-arrow" style="--i:1">→</div>
+      <div class="cascade-item se" style="--i:2"><h3>🦵 Bacak Ödemi</h3><p>Yan etki gelişir, kalp yetmezliği sanılır</p></div>
+      <div class="cascade-arrow" style="--i:3">→</div>
+      <div class="cascade-item med" style="--i:4"><h3>💊 Furosemid</h3><p>Ödem için diüretik eklenir</p></div>
+      <div class="cascade-arrow" style="--i:5">→</div>
+      <div class="cascade-item se" style="--i:6"><h3>⚠️ Dehidratasyon</h3><p>Hipotansiyon ve düşme riski artar!</p></div>
+    </div>
+  </div>
+  <div class="callout tip" style="margin-top:2rem"><span class="ci">🔎</span><p><strong>Asetilkolinesteraz İnhibitörü ➔ İnkontinans ➔ Antikolinerjik</strong> döngüsü de demans hastalarında sık görülen tehlikeli bir şelaledir.</p></div>
+  <div class="reference">Ref: UpToDate: Drug prescribing for older adults (Prescribing Cascades)</div>
+</div></section>
+
+<!-- 9: GELECEK VİZYONU -->
+<section class="slide"><div class="slide-inner">
+  <h2>Ufukta Ne Var? <span class="accent">Biyobelirteçler</span></h2>
+  <p style="text-align:center; font-size:1.1rem; color:#cbd5e1; margin-bottom:2rem;">Gelecekte yaşlılık, kronolojik değil <strong>biyolojik yaş</strong> üzerinden takip edilecek.</p>
+  <div class="future-grid">
+    <div class="fut-card">
+      <div class="fut-icon">🧬</div>
+      <h3>GDF-15</h3>
+      <p>Mitokondriyal stres belirteci. Kanda yükselmesi kas yıkımının (sarkopeni) erken habercisidir.</p>
+    </div>
+    <div class="fut-card">
+      <div class="fut-icon">⏱️</div>
+      <h3>Epigenetik Saatler</h3>
+      <p>DNA metilasyonuna bakarak hücrenin gerçek yaşlanma hızını (örneğin DunedinPACE) ölçen sistemler.</p>
+    </div>
+    <div class="fut-card">
+      <div class="fut-icon">📊</div>
+      <h3>Sistemik İmmün İndeksi (SII)</h3>
+      <p>Basit hemogramdan (Trombosit × Nötrofil / Lenfosit) hesaplanan, inflamasyon ve kırılganlık öngörücüsü.</p>
+    </div>
+    <div class="fut-card">
+      <div class="fut-icon">💊</div>
+      <h3>Geroscience</h3>
+      <p>Sirtuin aktivatörleri (Resveratrol) ve senolitikler ile yaşlanmanın hücresel saatini yavaşlatmak.</p>
+    </div>
+  </div>
+  <div class="reference">Ref: Belsky DW (2022) DunedinPACE / Patel MS (2023) GDF-15 in Frailty</div>
+</div></section>
+
+<!-- 10: SÜRPRİZ SORU & PALYATİF -->
+<section class="slide"><div class="slide-inner">
+  <h2>❓ Sınır Çizgisi: <span class="accent">Sürpriz Soru</span></h2>
+  <blockquote class="surprise-q">"Bu hastanın önümüzdeki <strong>12 ay</strong> içinde hayatını kaybetmesi beni <strong>şaşırtır mı?</strong>"</blockquote>
+  <div class="sq-flow">
+    <div class="sq-box yes">
+      <h3>EVET, Şaşırtır</h3>
+      <p>Kırılganlığı tersine çevirmeye odaklan.<br>Egzersiz, beslenme, tedavi optimizasyonu.</p>
+    </div>
+    <div class="sq-box no">
+      <h3>HAYIR, Şaşırtmaz</h3>
+      <p>Beklenen yaşam süresi kısıtlı.<br><strong>Palyatif Bakım</strong> planlamasını başlat.</p>
+    </div>
+  </div>
+  <div class="callout tip"><span class="ci">🤝</span><p><strong>Geçiş Noktası:</strong> Kırılganlığın terminal evresi (CFS 8-9), Nadire Hoca'nın bahsedeceği Palyatif Bakım yaklaşımlarının devreye girdiği yerdir.</p></div>
+  <div class="reference">Ref: Gold Standards Framework (GSF) Proactive Identification Guidance</div>
+</div></section>
+
+<!-- 11: ALGORİTMA -->
+<section class="slide"><div class="slide-inner">
+  <h2>Aile Hekimi <span class="accent">Cep Algoritması</span></h2>
+  <div class="algo-flow">
+    <div class="algo-step" style="--i:0"><span class="algo-n">1</span><div><strong>FARK ET & TARA</strong><br>65+ hastalarda 1 dakikalık FRAIL testi yap.</div></div>
+    <div class="algo-a">↓</div>
+    <div class="algo-step" style="--i:1"><span class="algo-n">2</span><div><strong>EVRELE</strong><br>Klinik Kırılganlık Ölçeği (CFS) ile durumunu belirle.</div></div>
+    <div class="algo-a">↓</div>
+    <div class="algo-step" style="--i:2"><span class="algo-n">3</span><div><strong>MÜDAHALE ET (Erken Evre)</strong><br>Polifarmasiyi azalt (Deprescribing), direnç egzersizi öner, protein alımını sorgula.</div></div>
+    <div class="algo-a">↓</div>
+    <div class="algo-step" style="--i:3"><span class="algo-n">4</span><div><strong>YÖNLENDİR (İleri Evre)</strong><br>"Sürpriz Soru"yu sor. Gerekirse palyatif bakım ve sosyal destek ağına yönlendir.</div></div>
+  </div>
+</div></section>
+
+<!-- 12: KAYNAKÇA -->
+<section class="slide"><div class="slide-inner" style="max-width:800px; margin:0 auto;">
+  <h2>Bilimsel <span class="accent">Kaynaklar</span></h2>
+  <ul style="font-size:1rem; color:#cbd5e1; line-height:1.6; list-style-type:circle;">
+    <li>UpToDate: <em>Frailty</em></li>
+    <li>UpToDate: <em>Deprescribing in older adults</em></li>
+    <li>UpToDate: <em>Drug prescribing for older adults</em></li>
+    <li>UpToDate: <em>Approach to the adult patient with fatigue</em></li>
+    <li>ICFSR 2024 International Clinical Practice Guidelines for Identification and Management of Frailty.</li>
+    <li>Xue QL. <em>The Frailty Syndrome: Definition and Natural History</em>. Clinics in Geriatric Medicine (2011).</li>
+    <li>Rockwood K. <em>A global clinical measure of fitness and frailty in elderly people (CFS)</em>. CMAJ (2005).</li>
+    <li>O'Mahony D. <em>STOPP/START criteria for potentially inappropriate prescribing in older people</em>. Age and Ageing.</li>
+    <li>Garfinkel D. <em>Deprescribing in Frail Older Adults</em> (2015).</li>
+  </ul>
+</div></section>
+
+<!-- 14: KAPANIŞ -->
+<section class="slide" data-bg="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1 class="hero-title closing">Teşekkürler</h1>
+    <p class="hero-sub" style="margin-bottom:1rem;">Sorularınız?</p>
+    <div class="author-block" style="margin-bottom: 2rem;"><div class="author-line"></div><p>Dr. Sadık Barış Adıgüzel</p><p class="author-role">Antalya Eğitim ve Araştırma Hastanesi Aile Hekimliği A.B.D.<br>7 Mayıs 2026</p></div>
+    <blockquote style="font-size:1.15rem; line-height:1.6; font-style:italic; color:#cbd5e1; max-width:800px; margin:0 auto; padding-top:2rem; border-top:1px solid rgba(255,255,255,0.1);">"Bir milletin yaşlı vatandaşlarına ve emeklilerine karşı tutumu; o milletin yaşama kudretinin en önemli kıstasıdır."<br><span style="font-size:1rem; font-weight:600; font-style:normal; color:#f8fafc; display:block; margin-top:1rem;">— Mustafa Kemal Atatürk</span></blockquote>
+  </div>
+  <div class="hero-particles" id="particles2"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
