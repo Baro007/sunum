@@ -13,21 +13,22 @@ Birinci basamakta erken tespit ve müdahale üzerine 15 dakikalık tıp sunumu.
 
 ## Yapı
 
-13 slayttan oluşur (~15 dk + Q&A buffer):
+14 slayttan oluşur (~15 dk + Q&A buffer):
 
 1. Kapak
-2. Açılış Vakası — "Hatice Teyze, 85"
+2. Karşılaştırmalı Açılış — "Hatice Teyze, 85" vs "Ahmet Amca, 82"
 3. Tanım + Komorbidite/Disabilite/Kırılganlık üçgeni
 4. Çarpıcı Gerçek (epidemiyoloji)
-5. Inflammaging mekanizması + biyobelirteçler
+5. Buzdağı: Inflammaging mekanizması + biyobelirteçler
 6. Sarkopeni + Yatak Başı Performans Testleri
 7. Ayırıcı Tanı: "Bunu Kırılganlık Sanma!"
 8. FRAIL Skalası
 9. CFS Skalası (Rockwood)
 10. Müdahale: Ekle / Çıkar / Reçete Şelalesi
 11. Sürpriz Soru → Palyatif Geçiş
-12. Cep Algoritması + Hatice Teyze'ye Uygulama + Take-home
-13. Kapanış (Atatürk alıntısı)
+12. Cep Algoritması + Her İki Vakaya Uygulama + Take-home
+13. Yaygın Yanlışlar
+14. Kapanış (Atatürk alıntısı)
 
 ## Kullanım
 

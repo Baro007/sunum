@@ -4,6 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Yaşlılarda Kırılganlık — Dr. Sadık Barış Adıgüzel</title>
+<meta name="description" content="Birinci basamakta yaşlılarda kırılganlık: erken tespit, FRAIL skalası, CFS, deprescribing ve palyatif geçiş. 7 Mayıs 2026.">
+<meta name="author" content="Dr. Sadık Barış Adıgüzel">
+<meta name="theme-color" content="#0a0e1a">
+
+<!-- Open Graph / LinkedIn / Slack -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Yaşlılarda Kırılganlık — Birinci Basamakta Erken Tespit ve Müdahale">
+<meta property="og:description" content="15 dakikalık tıp sunumu: FRAIL skalası, CFS, inflammaging, deprescribing, sürpriz soru ve palyatif geçiş. Aile hekimleri için pratik algoritma.">
+<meta property="og:url" content="https://kirilganlik.netlify.app/">
+<meta property="og:image" content="https://kirilganlik.netlify.app/og-image.svg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="kirilganlik.netlify.app">
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Yaşlılarda Kırılganlık — Dr. Sadık Barış Adıgüzel">
+<meta name="twitter:description" content="Birinci basamakta erken tespit, FRAIL, CFS, deprescribing ve palyatif geçiş.">
+<meta name="twitter:image" content="https://kirilganlik.netlify.app/og-image.svg">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -42,45 +69,49 @@
   <div class="hero-particles" id="particles"></div>
 </section>
 
-<!-- 2: AÇILIŞ VAKASI -->
-<section class="slide" data-notes="Vakayı sakin ve hikaye anlatır gibi okuyun. Sonunda salona dönün: 'Bu hastayı hepimiz tanıyoruz. Acaba bu sadece YAŞLI bir hasta mı, yoksa KIRILGAN mı? Aradaki fark, vereceğimiz tedaviyi tamamen değiştiriyor.' Hatice Teyze ismini sunum boyunca tekrarlayın — 12. slaytta ona geri döneceğiz.">
+<!-- 2: AÇILIŞ — KARŞILAŞTIRMALI VAKA -->
+<section class="slide" data-notes="İki hastayı yan yana gösterin. 'Hepimiz bu iki tipi de poliklinikte görüyoruz. İkisi de 80'li yaşlarda, ikisinin de bir kısım hastalığı var. Ama biri rezerv dolu, diğeri kırılgan. Aradaki fark KRONOLOJİK YAŞ değil — biyolojik yaş, fizyolojik rezerv, KIRILGANLIK. Sunum boyunca her ikisini de takip edeceğiz, sonda algoritmadan geçireceğiz.'">
 <div class="slide-inner">
-  <h2>Bir Vaka: <span class="accent">Hatice Teyze, 85</span></h2>
-  <div class="case-grid">
-    <div class="case-card primary">
-      <div class="case-icon">👵</div>
-      <h3>Hasta Profili</h3>
-      <ul class="case-list">
-        <li><strong>85 yaş, kadın, ev hanımı</strong></li>
-        <li>Eşi 2 yıl önce vefat etmiş, kızıyla yaşıyor</li>
-        <li>Boy 158 cm · Ağırlık 52 kg (6 ay önce 55 kg)</li>
-        <li>Kreatinin: 1.1 mg/dL · GFR (CKD-EPI): <strong style="color:#f87171">42 mL/dk</strong></li>
-      </ul>
-    </div>
-    <div class="case-card warn">
-      <h3>⚠️ Bu Ay Yaşananlar</h3>
-      <ul class="case-list">
-        <li>"Sürekli yorgunum, tadım kaçtı"</li>
-        <li>Geçen ay merdivende düşmüş → <strong>radius kırığı</strong></li>
-        <li>Kızı: "Annem son aylarda <strong>unutkan</strong>, bazen ilaçlarını karıştırıyor"</li>
-        <li>4 metrelik yürüme hızı: <strong style="color:#f87171">0.6 m/s</strong></li>
-      </ul>
-    </div>
-    <div class="case-card meds">
-      <h3>💊 Kullandığı 8 İlaç</h3>
-      <div class="med-pills">
-        <span class="med-pill">Amlodipin 10 mg</span>
-        <span class="med-pill">Metformin 1000 mg</span>
-        <span class="med-pill">Gliklazid 60 mg</span>
-        <span class="med-pill">Omeprazol 40 mg</span>
-        <span class="med-pill warn">Sertralin 50 mg</span>
-        <span class="med-pill warn">Lorazepam 1 mg</span>
-        <span class="med-pill">Atorvastatin 20 mg</span>
-        <span class="med-pill">ASA 100 mg</span>
+  <h2>İki Yaşlı, <span class="accent">İki Hikaye</span></h2>
+  <div class="compare-grid">
+    <div class="compare-card frail">
+      <div class="cc-header">
+        <div class="cc-avatar">👵</div>
+        <div class="cc-meta">
+          <div class="cc-name">Hatice Teyze, 85</div>
+          <div class="cc-tag frail-tag">Kırılgan profil</div>
+        </div>
       </div>
+      <ul class="cc-list">
+        <li>Son 6 ayda <strong>3 kg ↓</strong> · ağırlık 52 kg</li>
+        <li>"Sürekli yorgunum, tadım kaçtı"</li>
+        <li>Geçen ay düşme → radius kırığı</li>
+        <li>4-m yürüme: <strong class="hot">0.6 m/s</strong></li>
+        <li>İlaç: <strong class="hot">8 adet</strong> · GFR: <strong class="hot">42</strong> mL/dk</li>
+        <li>Kızı: "annem unutkan, ilaçlarını karıştırıyor"</li>
+      </ul>
+      <div class="cc-frail">FRAIL ≈ 4/5</div>
+    </div>
+    <div class="compare-card fit">
+      <div class="cc-header">
+        <div class="cc-avatar">👴</div>
+        <div class="cc-meta">
+          <div class="cc-name">Ahmet Amca, 82</div>
+          <div class="cc-tag fit-tag">Fit profil</div>
+        </div>
+      </div>
+      <ul class="cc-list">
+        <li>Stabil <strong>70 kg</strong>, 5 yıldır kilo değişimi yok</li>
+        <li>Haftada 3 gün dağ yürüyüşü</li>
+        <li>Düşme öyküsü yok</li>
+        <li>4-m yürüme: <strong class="cool">1.2 m/s</strong></li>
+        <li>İlaç: <strong class="cool">3 adet</strong> · GFR: <strong class="cool">78</strong> mL/dk</li>
+        <li>Torunlarıyla aktif, hobi: marangozluk</li>
+      </ul>
+      <div class="cc-frail">FRAIL = 0/5</div>
     </div>
   </div>
-  <div class="callout tip" style="max-width:1100px;"><span class="ci">🤔</span><p><strong>Soru:</strong> Bu hasta sadece "yaşlı" mı, yoksa <strong>kırılgan</strong> mı? Cevap, vereceğimiz tedaviyi tamamen değiştirir. <em>Hatice Teyze'nin yolculuğunu sunum boyunca takip edeceğiz.</em></p></div>
+  <div class="callout tip" style="max-width:1100px;"><span class="ci">⚖️</span><p><strong>İkisi de 80'li yaşlarda</strong>, ama hikayeleri zıt yönlere gidiyor. Aradaki fark <strong>kronolojik yaş değil</strong> — fizyolojik <strong>rezerv ve kırılganlık düzeyi.</strong> İkisinin yolculuğunu sunum boyunca takip edeceğiz.</p></div>
 </div></section>
 
 <!-- 3: TANIM + ÜÇGEN -->
@@ -121,21 +152,50 @@
   <div class="reference">Ref: UpToDate Frailty (2026) / Pazan F. Eur Geriatr Med 2022 / TÜİK Yaşlı İstatistikleri 2024</div>
 </div></section>
 
-<!-- 5: MEKANİZMA (Inflammaging) -->
-<section class="slide" data-notes="Mekanizma slaytı tıbbi merak için. Çok detaya girmeyin. 'Buzdağının altı' metaforunu kullanın. Sonda biyobelirteç cümlesini söyleyin: 'Gelecekte basit bir hemogramdaki SII indeksi veya GDF-15 düzeyi, bu hücresel rezervi ölçecek. Şimdilik klinik ölçeklerimiz var.' Kas-Beyin aksını vurgulayın çünkü 12. slayttaki Hatice Teyze'nin unutkanlığı buradan geliyor.">
+<!-- 5: BUZDAĞI — INFLAMMAGING -->
+<section class="slide" data-notes="Buzdağı metaforunu görsel olarak kullanın. 'Hastayı poliklinikte gördüğümüzde sadece SU ÜSTÜNÜ görüyoruz: yorgunluk, düşme, kilo kaybı. Ama bunların altında SU ALTI bir biyolojik fırtına var.' Kas-Beyin Aksını vurgulayın — Hatice Teyze'nin 'unutkanlığı' bu eksenden. Biyobelirteçleri 1 cümlede geçin.">
 <div class="slide-inner">
   <h2>Buzdağının Altı: <span class="accent">Inflammaging</span></h2>
-  <div class="infographic-flow">
-    <div class="info-box" style="--i:0"><h3>🔥 İnflammaging</h3><p>Kronik düşük dereceli inflamasyon<br>(IL-6, CRP, TNF-α)</p></div>
-    <div class="info-arrow">→</div>
-    <div class="info-box" style="--i:1"><h3>🧟 Hücresel Senesens</h3><p>Zombi hücre birikimi ve<br>toksik SASP faktörleri</p></div>
-    <div class="info-arrow">→</div>
-    <div class="info-box" style="--i:2"><h3>🔋 Mitokondri Hasarı</h3><p>ATP düşüklüğü, ROS artışı,<br>kas atrofisi</p></div>
-    <div class="info-arrow">→</div>
-    <div class="info-box alert" style="--i:3"><h3>⚠️ Kırılganlık</h3><p>Düşme, hastane yatışı,<br>mortalite artışı</p></div>
+  <div class="iceberg-container">
+    <div class="iceberg-side surface">
+      <div class="iceberg-label">SU ÜSTÜ <span class="lbl-sub">— Klinik Belirtiler</span></div>
+      <div class="iceberg-items">
+        <div class="ice-item">😴 Yorgunluk</div>
+        <div class="ice-item">📉 Kilo kaybı</div>
+        <div class="ice-item">🤕 Düşme · kırık</div>
+        <div class="ice-item">🧠 Hafıza ↓</div>
+      </div>
+    </div>
+    <div class="iceberg-svg-wrap" aria-hidden="true">
+      <svg viewBox="0 0 240 380" class="iceberg-svg">
+        <defs>
+          <linearGradient id="iceTop" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#e0f2fe"/>
+            <stop offset="100%" stop-color="#7dd3fc"/>
+          </linearGradient>
+          <linearGradient id="iceBot" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#0c4a6e"/>
+            <stop offset="100%" stop-color="#082f49"/>
+          </linearGradient>
+        </defs>
+        <line x1="0" y1="120" x2="240" y2="120" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.7"/>
+        <polygon points="120,10 80,80 60,120 180,120 160,80" fill="url(#iceTop)" opacity="0.95"/>
+        <polygon points="60,120 180,120 210,200 200,290 150,360 90,360 30,290 50,210" fill="url(#iceBot)" stroke="#1e3a5f" stroke-width="1"/>
+        <polygon points="120,10 80,80 60,120 50,210 30,290 90,360 100,300 70,200 90,140 110,90" fill="#cbd5e1" opacity="0.18"/>
+      </svg>
+    </div>
+    <div class="iceberg-side underwater">
+      <div class="iceberg-label hidden-lbl">SU ALTI <span class="lbl-sub">— Moleküler Mekanizma</span></div>
+      <div class="iceberg-items">
+        <div class="ice-item under">🔥 IL-6, TNF-α, CRP ↑</div>
+        <div class="ice-item under">🧟 SASP / Senesens</div>
+        <div class="ice-item under">🔋 Mitokondri ↓ · ROS ↑</div>
+        <div class="ice-item under">⚙️ Hücresel rezerv ↓</div>
+      </div>
+    </div>
   </div>
-  <div class="callout"><span class="ci">🧠</span><p><strong>Kas-Beyin Aksı:</strong> Düşük el kavrama gücü, kognitif yıkımın <strong>en güçlü öngördürücüsüdür</strong>. Sarkopeni sadece fiziksel değil, kognitif kırılganlığın da habercisidir.</p></div>
-  <div class="callout tip" style="margin-top:0.8rem;"><span class="ci">🔬</span><p><strong>Geleceğe Bakış:</strong> GDF-15, IL-6, hs-CRP ve SII indeksi (Trombosit×Nötrofil/Lenfosit) gibi biyobelirteçler hücresel rezervi sayısallaştırıyor. Şimdilik klinik ölçekler standart, ancak <strong>e-Nabız tabanlı e-FI</strong> sistemleri yakın gelecekte taramayı otomatikleştirecek.</p></div>
+  <div class="callout"><span class="ci">🧠</span><p><strong>Kas-Beyin Aksı:</strong> Düşük el kavrama gücü, <strong>kognitif yıkımın en güçlü öngördürücüsüdür</strong>. Sarkopeni hem fiziksel hem kognitif kırılganlığın habercisidir.</p></div>
+  <div class="callout tip" style="margin-top:0.6rem;"><span class="ci">🔬</span><p><strong>Geleceğe Bakış:</strong> GDF-15, hs-CRP, SII indeksi (Trombosit × Nötrofil / Lenfosit) gibi biyobelirteçler hücresel rezervi sayısallaştırıyor. <strong>e-Nabız tabanlı e-FI</strong> sistemleri taramayı yakında otomatikleştirecek.</p></div>
   <div class="reference">Ref: Franceschi C. Inflammaging (2000) / Ferrucci L. Nat Rev Cardiol (2018) / Belsky DW. DunedinPACE (2022)</div>
 </div></section>
 
@@ -320,26 +380,34 @@
   <div class="reference">Ref: Gold Standards Framework Proactive Identification Guidance / SPICT</div>
 </div></section>
 
-<!-- 12: ALGORİTMA + TAKE-HOME + HATİCE TEYZE GERİ DÖNÜŞ -->
-<section class="slide" data-notes="Sunumun en önemli slaytı. Sol: 4 adımlı cep algoritması. Sağ: Hatice Teyze'ye uygulanışı - somut. Yavaş okuyun: 'FRAIL: 4/5 → kırılgan. CFS: 6. Müdahale: lorazepam tape, sertralin değerlendir, SKB hedefi gevşet, direnç egzersizi başlat, kızını bakım yüküne dahil et. Sürpriz soru? Hayır şaşırmam → ACP konuşmasını başlat ama agresif geri kazanım hâlâ mümkün.' Take-home 3 cümle: TARA-MÜDAHALE-YÖNLENDİR.">
+<!-- 12: ALGORİTMA + İKİ VAKAYA UYGULAMA + TAKE-HOME -->
+<section class="slide" data-notes="Sunumun en önemli slaytı. Sol: algoritma. Sağ üst: Hatice Teyze'ye uygulanışı (kırılgan). Sağ alt: Ahmet Amca'ya uygulanışı (fit). Anlatım: 'Aynı algoritma — farklı sonuç. Hatice'de aktif müdahale, Ahmet'te sadece rutin tarama.' Take-home 3 cümle: TARA-MÜDAHALE-YÖNLENDİR.">
 <div class="slide-inner">
   <h2>Aile Hekimi <span class="accent">Cep Algoritması</span></h2>
   <div class="algo-case-grid">
     <div class="algo-flow">
       <div class="algo-step" style="--i:0"><span class="algo-n">1</span><div><strong>FARK ET & TARA</strong><br>65+ → FRAIL (1 dk) veya 4-m yürüme hızı</div></div>
       <div class="algo-a">↓</div>
-      <div class="algo-step" style="--i:1"><span class="algo-n">2</span><div><strong>EVRELE & DIŞLA</strong><br>CFS + ayırıcı tanı (depresyon, anemi, hipotiroidi…)</div></div>
+      <div class="algo-step" style="--i:1"><span class="algo-n">2</span><div><strong>EVRELE & DIŞLA</strong><br>CFS + ayırıcı tanı</div></div>
       <div class="algo-a">↓</div>
-      <div class="algo-step" style="--i:2"><span class="algo-n">3</span><div><strong>MÜDAHALE</strong><br>Egzersiz + protein + deprescribing (STOPPFrail)</div></div>
+      <div class="algo-step" style="--i:2"><span class="algo-n">3</span><div><strong>MÜDAHALE</strong><br>Egzersiz + protein + deprescribing</div></div>
       <div class="algo-a">↓</div>
-      <div class="algo-step" style="--i:3"><span class="algo-n">4</span><div><strong>YÖNLENDİR</strong><br>Sürpriz soru → palyatif/ACP veya KGD</div></div>
+      <div class="algo-step" style="--i:3"><span class="algo-n">4</span><div><strong>YÖNLENDİR</strong><br>Sürpriz soru → palyatif/ACP / KGD</div></div>
     </div>
-    <div class="case-apply">
-      <div class="ca-header">👵 Hatice Teyze'ye Uygulama</div>
-      <div class="ca-step"><span class="ca-n">1</span><div><strong>FRAIL: 4/5</strong> → Kırılgan ✓ <br>Yürüme hızı 0.6 m/s → onaylar</div></div>
-      <div class="ca-step"><span class="ca-n">2</span><div><strong>CFS: 6</strong> (orta kırılgan)<br>Sertralin var → depresyon kontrol et</div></div>
-      <div class="ca-step"><span class="ca-n">3</span><div>Lorazepam <em>tape</em> · SKB hedefi gevşet (≤140) · Direnç egzersizi · D vitamini · Kızı eğit</div></div>
-      <div class="ca-step"><span class="ca-n">4</span><div>Sürpriz soru = <strong>"Hayır"</strong><br>→ ACP başlat, ama geri kazanım hâlâ mümkün</div></div>
+    <div class="cases-stack">
+      <div class="case-apply frail-bordered">
+        <div class="ca-header">👵 Hatice Teyze (Kırılgan) — Aktif Müdahale</div>
+        <div class="ca-row"><span class="ca-n">1</span><div><strong>FRAIL 4/5</strong> · 4-m hız <strong>0.6 m/s</strong> → kırılgan ✓</div></div>
+        <div class="ca-row"><span class="ca-n">2</span><div><strong>CFS 6</strong> · Sertralin var → depresyonu doğrula</div></div>
+        <div class="ca-row"><span class="ca-n">3</span><div>Lorazepam <em>tape</em> · SKB hedefi ≤140 · Direnç egzersizi · D vit · Kızı eğit</div></div>
+        <div class="ca-row"><span class="ca-n">4</span><div>Sürpriz soru = <strong>"Hayır"</strong> → ACP başlat, geri kazanım hâlâ mümkün</div></div>
+      </div>
+      <div class="case-apply fit-bordered">
+        <div class="ca-header">👴 Ahmet Amca (Fit) — Koruyucu İzlem</div>
+        <div class="ca-row compact"><span class="ca-n">1</span><div><strong>FRAIL 0/5</strong> · 4-m hız <strong>1.2 m/s</strong> → robust</div></div>
+        <div class="ca-row compact"><span class="ca-n">2-3</span><div>CFS 2 · Egzersiz/diyet zaten optimal · İlaç gözden geçir (3 ilaç)</div></div>
+        <div class="ca-row compact"><span class="ca-n">4</span><div>Sürpriz soru = <strong>"Evet, şaşırırım"</strong> → 1 yıl sonra rutin yeniden tarama</div></div>
+      </div>
     </div>
   </div>
   <div class="takehome-card">
@@ -350,7 +418,33 @@
   </div>
 </div></section>
 
-<!-- 13: KAPANIŞ + KAYNAKLAR -->
+<!-- 13: YAYGIN YANLIŞLAR -->
+<section class="slide" data-notes="Bu slayt sloganlaştırıcı. Üç miti tek tek söyleyip yıkın. 'Eğer salondan bir şey hatırlayacaksanız, bu üç şeyi hatırlayın.' Sonra son slayda geçin.">
+<div class="slide-inner">
+  <h2>Yaygın <span class="accent">Yanlışlar</span></h2>
+  <p style="text-align:center; color:#94a3b8; margin-bottom:1.5rem; font-size:1rem;">Birinci basamakta sık duyduğumuz mitler, kanıtla yıkılıyor.</p>
+  <div class="myth-grid">
+    <div class="myth-card">
+      <div class="myth-row myth-bad"><span class="myth-x">✗</span><strong>"Yaşlanmak = Kırılganlık"</strong></div>
+      <div class="myth-row myth-good"><span class="myth-v">✓</span>Yaşlanma evrensel; kırılganlık <strong>önlenebilir</strong> ve pre-frail evrede <strong>geri çevrilebilir</strong>.</div>
+    </div>
+    <div class="myth-card">
+      <div class="myth-row myth-bad"><span class="myth-x">✗</span><strong>"Çok ilaç = İyi tedavi"</strong></div>
+      <div class="myth-row myth-good"><span class="myth-v">✓</span>Polifarmasi (≥5 ilaç) kırılganlığın hem <strong>nedeni</strong> hem <strong>sonucudur</strong>. Uygunsuz ilaç kesimi mortaliteyi <strong>%37 azaltır</strong>.</div>
+    </div>
+    <div class="myth-card">
+      <div class="myth-row myth-bad"><span class="myth-x">✗</span><strong>"Egzersiz yaşlıyı yorar / risklidir"</strong></div>
+      <div class="myth-row myth-good"><span class="myth-v">✓</span>Direnç egzersizi <strong>en kanıtlı tek tedavidir</strong>. Düşmeyi azaltır, kası korur, kognitif yıkımı yavaşlatır.</div>
+    </div>
+    <div class="myth-card">
+      <div class="myth-row myth-bad"><span class="myth-x">✗</span><strong>"Sıkı SKB ve HbA1c hedefi her zaman doğru"</strong></div>
+      <div class="myth-row myth-good"><span class="myth-v">✓</span>Kırılganda SKB &lt;130 ve HbA1c &lt;%7 hedefleri <strong>mortaliteyi artırır</strong> (BGS Pragmatic Prescribing 2025).</div>
+    </div>
+  </div>
+  <div class="reference">Ref: UpToDate Frailty / BGS Pragmatic Prescribing 2025 / Pazan F. Eur Geriatr Med 2022</div>
+</div></section>
+
+<!-- 14: KAPANIŞ + KAYNAKLAR -->
 <section class="slide" data-bg="hero" data-notes="Atatürk alıntısını yavaş okuyun. Salonda saniye sessizlik bırakın. 'Sorularınızı bekliyorum' deyip mikrofonu açık bırakın. Soru gelmezse: 'Birinci basamakta tek bir kırılgan hastayı bile erken yakalarsanız bu sunum amacına ulaşmıştır.'">
   <div class="hero-overlay"></div>
   <div class="hero-content">
