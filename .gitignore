@@ -1,0 +1,13 @@
+# Local presenter prep files (kept off the public repo)
+SUNUM-CALISMA-DOSYASI.md
+*-LOCAL.md
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Temp
+*.swp
+*.swo
+*~
